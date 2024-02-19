@@ -1,7 +1,32 @@
-class hello
-{
-    public static void main(String[] args)
+abstract class Animal{
+    abstract void  Sound();
+}
+
+
+class Dog extends Animal{
+    void Sound()
     {
-        System.out.println("Hemlo");
+        System.out.println("Barks");
     }
 }
+
+class Cat extends Animal{
+    void Sound()
+    {
+        System.out.println("Meows");
+    }
+}
+
+class Abs{
+    public static void main(String args[])
+    {
+    Dog obj = new Dog();
+    Cat obj1=new Cat();
+
+    obj.Sound();
+
+    obj1.Sound();
+    }  
+
+}
+
