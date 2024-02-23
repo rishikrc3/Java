@@ -15,5 +15,12 @@ public class arrayList
         nums.remove(Integer.valueOf(30));
 
         System.out.println("After removing 30 from nums:"+nums);
+
+        //using for each 
+
+        for(int it:nums)
+        {
+            System.out.println(it);
+        }
     }
 }
